@@ -1,0 +1,36 @@
+package ArrayWorkShop;
+
+import java.util.Scanner;
+
+public class AddTwoArrayNumbers {
+
+	public static void main(String[] args) {
+		System.out.println("Enter total number of arrays");
+		Scanner scan = new Scanner(System.in);
+		int size1 = scan.nextInt();
+		int[]array1 = new int[size1];
+		
+		for(int i = 0; i < 5; i++) {
+			System.out.println("Enter the numbers of first array");
+			int numbers = scan.nextInt();
+			array1[i] = i;
+			}
+		System.out.println("Enter total number of second arrays");
+		int size2 = scan.nextInt();
+		int[]array2 = new int[size2];
+		for(int i = 0; i < 5; i ++) {
+			array2[i] = i;
+			}
+		int[]sum = new int[size1];
+		for(int i = 0 ; i < size1; i++) {
+			sum[i] = array1[i] + array2[i];
+			
+		}
+		for(int i = 0; i < sum.length;i++ ) {
+			System.out.println(sum[i]);
+		}
+		
+
+	}
+
+}

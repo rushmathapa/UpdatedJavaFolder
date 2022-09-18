@@ -1,0 +1,15 @@
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class DifferenceBetweenTwoDates {
+
+	public static void main(String[] args) {
+		System.out.println("Enter first date");
+		Scanner scan = new Scanner(System.in);
+		LocalDate d1 = LocalDate.now();
+		System.out.println(d1);
+	}
+		
+
+}

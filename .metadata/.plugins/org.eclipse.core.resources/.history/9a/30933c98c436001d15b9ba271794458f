@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DifferenceBetweenTwoDates {
+
+	public static void main(String[] args) {
+		System.out.println("Enter Year,Month and Day of First Date");
+		Scanner scan = new Scanner(System.in);
+		int year1 = scan.nextInt();
+		int month1 = scan.nextInt();
+		int day1 = scan.nextInt();
+		
+		System.out.println("Enter the Year, Month and Day of second Date");
+		int year2 = scan.nextInt();
+		int month2 = scan.nextInt();
+		int day2 = scan.nextInt();
+	}
+
+}

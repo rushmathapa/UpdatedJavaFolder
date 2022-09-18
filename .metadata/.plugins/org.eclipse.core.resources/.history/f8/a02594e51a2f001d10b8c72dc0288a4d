@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ArticleAddToWord {
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+		System.out.println("Enter any words");
+		Scanner scan = new Scanner (System.in);
+		String word = scan.nextLine();
+		char[]articleWord = word.toCharArray();
+		if(articleWord[0] == 'a' || articleWord[0] == 'e' || articleWord[0] == 'i' || articleWord[0] == 'o' || articleWord[0] == 'u') {
+			word = "an " + word;
+			
+		}
+		else {
+			word = "a " + word;
+		}
+		System.out.println(word);
+	}
+
+}

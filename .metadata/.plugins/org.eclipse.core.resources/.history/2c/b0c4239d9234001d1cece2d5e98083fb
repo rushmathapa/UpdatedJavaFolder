@@ -1,0 +1,22 @@
+package ArrayWorkShop;
+
+import java.util.Scanner;
+
+public class RemoveDublicateCharFromString {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the String");
+		Scanner scan = new Scanner (System.in);
+		String word = scan.nextLine(); 
+		char[]wordcharacter = word.toCharArray();
+		for(int i = 0; i < wordcharacter.length; i++) {
+			System.out.println(wordcharacter[i]); 
+			
+			for(int j = i + 1; j < wordcharacter.length; j++) {
+				System.out.println(wordcharacter[j]);
+			}
+			
+		}
+	}
+
+}

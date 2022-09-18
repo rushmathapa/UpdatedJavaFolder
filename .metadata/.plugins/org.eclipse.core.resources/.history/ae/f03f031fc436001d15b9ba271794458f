@@ -1,0 +1,22 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class DifferenceBetweenTwoDates {
+
+	public static void main(String[] args) {
+		System.out.println("Enter second date");
+		Scanner scan = new Scanner(System.in);
+		LocalDate d1 = LocalDate.now();//class to get current date 
+		System.out.println(d1);//print the current date may be export from desktop
+		//DateTimeFormatter fd1 = DateTimeFormatter.ofPattern("mm/dd/year");
+		//String formateddate1 = d1.format(fd1);
+		 DateTimeFormatter formatd1 = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+		    String formattedDate = d1.format(formatd1);
+		    System.out.println("After formatting: " + formattedDate);
+	
+	}
+		
+
+}

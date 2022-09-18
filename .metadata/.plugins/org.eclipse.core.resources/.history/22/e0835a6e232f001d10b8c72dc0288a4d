@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class ArrayAdd {
+
+	public static void main(String[] args) {
+		System.out.println("Enter first total array numbers");
+		Scanner scan = new Scanner (System.in);
+		int count = scan.nextInt();
+		int[]array1 = new int[count];
+		
+	}
+
+}

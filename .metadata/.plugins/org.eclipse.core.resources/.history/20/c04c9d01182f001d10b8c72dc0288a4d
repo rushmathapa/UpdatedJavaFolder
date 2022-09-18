@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SumFactorsNumbers {
+
+	public static void main(String[] args) {
+		System.out.println("Enter any numbers");
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		int i = 1;
+		int primesum = 0;
+		while(i<=number) {
+			if (number % i == 0) {
+				primesum = primesum + i ;
+				}
+			i +=1;
+		}System.out.println(primesum);
+		if (number == primesum) {
+			System.out.println("It is Perfecr Number " + primesum);
+			
+		}
+		else {
+			System.out.println("It is not Perfecr Number " + primesum);
+		}
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package ArrayWorkShop;
+
+public class SortingCharacter {
+
+	public static void main(String[] args) {
+		char[]alphabet = {'g','e','f','g','a','r','h','w'};
+		for(int i = 0; i<alphabet.length; i ++) {
+			System.out.println(alphabet[i]);
+			
+			for(int j = i + 1; j<alphabet.length; j++) {
+				if(alphabet[i] > alphabet[j]) {
+					char smallestalpha = alphabet[j];
+					alphabet[j] = alphabet[i];
+					alphabet[i] = (char) smallestalpha;
+				}
+			}
+			
+			}
+		for(int i = 0; i< alphabet.length; i++) {
+			System.out.println(alphabet[i]);
+		}
+		}
+
+}

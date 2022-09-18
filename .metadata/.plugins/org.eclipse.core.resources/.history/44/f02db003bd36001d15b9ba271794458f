@@ -1,0 +1,13 @@
+import java.sql.Date;
+import java.util.Scanner;
+
+public class DifferenceBetweenTwoDates {
+
+	public static void main(String[] args) {
+		System.out.println("Enter first date");
+		Scanner scan = new Scanner(System.in);
+		String d1 = scan.nextLine();
+
+	}
+
+}

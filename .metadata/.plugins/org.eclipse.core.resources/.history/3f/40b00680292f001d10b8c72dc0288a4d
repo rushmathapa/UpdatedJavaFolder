@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class OddAndEvenArray {
+
+	public static void main(String[] args) {
+		System.out.println("Enter total numbers of array");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		int[]arrayEven = new int[num];
+		int[]arrayOdd = new int[num];
+		int[] array1 = new int[num];
+		for (int i = 0; i <= num; i++) {
+			array1[i] = num;
+
+			if (array1[i] % 2 == 0) {
+				arrayEven[i] = array1[i];
+				
+				System.out.println(array1[i]);
+			} else {
+				arrayOdd[i] = array1[i];
+				System.out.println(array1[i]);
+			}
+		}
+	}
+
+}
